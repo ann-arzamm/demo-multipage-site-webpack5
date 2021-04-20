@@ -1,0 +1,23 @@
+// * There is a CSS reset (sanitize.css) imported by 'postcss-normalize' plugin
+
+// Core modules
+@import "css/core/fonts";
+@import "css/core/variables";
+@import "css/core/mixins";
+@import "css/core/animation";
+@import "css/core/media";
+
+// Content blocks | BEM
+// @import "css/blocks/header";
+
+// General styles
+// * {
+//   transition: 0.5s all;
+//   font-family: "MuseoSansCyrl", sans-serif;
+// }
+
+// .container {
+//   max-width: 950px;
+//   position: relative;
+//   margin: 0 auto;
+// }
