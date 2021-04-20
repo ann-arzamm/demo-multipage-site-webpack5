@@ -1,2 +1,7 @@
-# webpack-5-frontend
-A webpack 5 build for frontend development.
+# Portfolio project
+
+- BEM methodology implementation
+- Technology used:
+  - 
+
+Preview the final build here
