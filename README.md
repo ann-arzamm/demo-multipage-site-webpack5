@@ -1,7 +1,11 @@
 # Portfolio project
 
-- BEM methodology implementation
-- Technology used:
-  - 
+What is it: BEM methodology implementation project
+    
 
-Preview the final build here
+## Technology used:
+- 
+- 
+
+
+[Preview the final build here](...)
