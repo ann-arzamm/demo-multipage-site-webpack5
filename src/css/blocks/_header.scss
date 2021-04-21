@@ -34,7 +34,7 @@
     .shortcuts {
       display: none;
     }
-    // TODO sandwich menu
+    // TODO sandwich menu dropdown list
     .sandwich {
       display: flex;
     }
@@ -68,6 +68,8 @@
 }
 
 .list-item {
+  // TODO active element style: bold and no pointer cursor
+
   cursor: pointer;
 
   &__menu {
@@ -77,6 +79,7 @@
       width: 13px;
     }
   }
+  // TODO active item dropdown menu & different ::after img
 
   &__link {
     text-decoration: none;

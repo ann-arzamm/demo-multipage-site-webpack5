@@ -7,14 +7,6 @@ const loadCss = () => ({
 
 const loadPostCss = (env) => {
   const plugins = [
-    // scss nested syntax
-    'postcss-nested',
-    // scss variables, conditionals, and iterators
-    {
-      'postcss-advanced-variables': {
-        importPaths: ['../src/', '../src/css'],
-      },
-    },
     // reset browsers default css
     {
       'postcss-normalize': {
@@ -22,12 +14,20 @@ const loadPostCss = (env) => {
         forceImport: 'sanitize.css',
       },
     },
+    // scss variables, conditionals, and iterators
+    {
+      'postcss-advanced-variables': {
+        importPaths: ['../src/', '../src/css'],
+      },
+    },
+    // scss nested syntax
+    'postcss-nested',
   ];
 
   if (env === 'prod') {
-    plugins.push(
-      // experimental css transpilation & autoprefixer
-      { 'postcss-preset-env': { stage: 0 } },
+    plugins.unshift(
+      // optimization, minification, autosorting, etc.
+      { cssnano: { preset: 'default' } },
       // remove unused css
       {
         '@fullhuman/postcss-purgecss': {
@@ -38,8 +38,8 @@ const loadPostCss = (env) => {
           fontFace: true,
         },
       },
-      // optimization, minification, autosorting, etc.
-      { cssnano: { preset: 'default' } },
+      // experimental css transpilation & autoprefixer
+      { 'postcss-preset-env': { stage: 0 } },
     );
   }
 
