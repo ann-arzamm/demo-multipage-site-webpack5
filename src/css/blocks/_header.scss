@@ -5,9 +5,7 @@
 .nav {
   padding: 0 24px;
   // TODO media for font-size
-  font-size: 18px;
   height: 100px;
-  color: $text_dark;
   display: grid;
   grid-template-areas: "a b c";
   grid-template-columns: 119px 75% 10%;
