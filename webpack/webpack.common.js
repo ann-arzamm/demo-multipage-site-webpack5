@@ -16,7 +16,7 @@ export default () => merge(
     output: {
       path: path.join(process.cwd(), 'build'),
       publicPath: '',
-      clean: true,
+
     },
   },
 );

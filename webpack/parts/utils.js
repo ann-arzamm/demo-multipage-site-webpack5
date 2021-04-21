@@ -5,11 +5,10 @@ import WebpackBar from 'webpackbar';
 
 // Dev server options
 const options = {
-  hmr: true,
+  liveReload: true,
   port: 3000,
   host: '127.0.0.1',
   open: true,
-  waitForBuild: true,
   static: path.join(process.cwd(), 'build'),
 };
 

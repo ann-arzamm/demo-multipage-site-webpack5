@@ -18,6 +18,7 @@ export default () => merge(
 
     // Exit bundling process on the first error instead of tolerating it
     bail: true,
+    clean: true,
 
     entry: path.join(process.cwd(), 'src/index.js'),
     output: {

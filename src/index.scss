@@ -8,12 +8,13 @@
 @import "css/core/media";
 
 // Content blocks | BEM
-// @import "css/blocks/header";
+@import "css/blocks/header";
 
 // General styles
 * {
   transition: 0.5s all;
-  font-family: "MuseoSansCyrl", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
 }
 
 .container {
