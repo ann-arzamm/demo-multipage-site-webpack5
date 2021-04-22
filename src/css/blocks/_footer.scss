@@ -6,7 +6,6 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  padding: 24px 24px 0;
 
   @media (max-width: 668px) {
     justify-content: flex-start;
@@ -66,7 +65,6 @@
   &__item {
     display: flex;
     width: 30%;
-    // height: 40px;
     align-items: center;
   }
 

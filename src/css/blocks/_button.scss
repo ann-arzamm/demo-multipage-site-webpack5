@@ -1,0 +1,25 @@
+.button {
+  display: block;
+  width: 161px;
+  height: 53px;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 20px;
+  text-align: center;
+  line-height: 53px;
+
+  @media (max-width: 768px) {
+    margin: 0 auto;
+  }
+
+  &_accent {
+    background: $color_accent;
+    color: #fff;
+  }
+
+  &:hover {
+    background: #fff;
+    color: $color_accent;
+  }
+}

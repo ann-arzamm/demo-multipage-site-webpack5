@@ -10,6 +10,8 @@
 // Content blocks | BEM
 @import "css/blocks/header";
 @import "css/blocks/footer";
+@import "css/blocks/section-slide";
+@import "css/blocks/button";
 
 // General styles
 * {
@@ -21,7 +23,8 @@
 }
 
 .container {
-  max-width: 1125px;
+  max-width: 1173px;
+  padding: 0 24px;
   position: relative;
   margin: 0 auto;
 }

@@ -3,13 +3,12 @@
 }
 
 .nav {
-  padding: 0 24px;
+  padding: 0;
   // TODO media for font-size
   height: 100px;
   display: grid;
   grid-template-areas: "a b c";
   grid-template-columns: 119px 75% 10%;
-  // grid-gap: 20px;
   align-content: center;
   justify-content: space-between;
 
