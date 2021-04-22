@@ -93,6 +93,14 @@
     justify-content: space-between;
     align-items: center;
   }
+
+  &__img {
+    fill: $text_dark;
+
+    &:hover {
+      fill: $color_accent;
+    }
+  }
 }
 
 .sandwich {
@@ -100,4 +108,12 @@
   align-items: center;
   justify-content: flex-end;
   padding-right: 32px;
+
+  &__img {
+    fill: $text_dark;
+
+    &:hover {
+      fill: $color_accent;
+    }
+  }
 }

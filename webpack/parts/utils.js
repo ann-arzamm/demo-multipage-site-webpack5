@@ -15,10 +15,12 @@ const options = {
 export const loadDevServer = () => ({
   watch: true, // ! important: webpack and the server will continue to run in watch mode
 
-  entry: [
-    'webpack-plugin-serve/client', // ! important: this is required for the dev server
-    path.join(process.cwd(), 'src/index.js'),
-  ],
+  entry: {
+    index: [
+      'webpack-plugin-serve/client', // ! important: this is required for the dev server
+      path.join(process.cwd(), 'src/index.js'),
+    ],
+  },
 
   plugins: [new Serve(options)],
 });

@@ -23,6 +23,10 @@
   font-size: 18px;
 }
 
+a:hover {
+  color: $color_accent;
+}
+
 .container {
   max-width: 1173px;
   padding: 0 24px;

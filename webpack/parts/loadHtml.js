@@ -13,6 +13,14 @@ export default () => ({
     new HtmlWebpackPlugin({
       template: path.join(process.cwd(), 'src/index.html'),
       inject: 'body',
+      chunks: ['index'],
+      filename: 'index.html',
+    }),
+    new HtmlWebpackPlugin({
+      template: path.join(process.cwd(), 'src/services.html'),
+      inject: 'body',
+      chunks: ['index'],
+      filename: 'services.html',
     }),
   ],
 });

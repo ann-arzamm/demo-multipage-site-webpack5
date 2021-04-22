@@ -19,7 +19,10 @@ export default () => merge(
     // Exit bundling process on the first error instead of tolerating it
     bail: true,
 
-    entry: path.join(process.cwd(), 'src/index.js'),
+    entry: {
+      index: path.join(process.cwd(), 'src/index.js'),
+    },
+
     output: {
       filename: 'js/[name].[contenthash:8].js',
       chunkFilename: 'js/[name].[contenthash:8].chunk.js',
