@@ -32,6 +32,10 @@
   &__text {
     min-height: 135px;
     padding: 15px 0;
+
+    @media (max-width: 768px) {
+      min-height: auto;
+    }
   }
 
   @media (max-width: 768px) {
