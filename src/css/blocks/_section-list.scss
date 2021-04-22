@@ -1,0 +1,40 @@
+.section-list {
+  padding: 116px 0 138px;
+  text-align: center;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 40px;
+
+    @media (max-width: 1024px) {
+      justify-content: space-evenly;
+    }
+  }
+}
+
+.section-list-item {
+  max-width: 330px;
+  width: 100%;
+  padding-bottom: 32px;
+  text-align: left;
+
+  &__img {
+    padding-bottom: 24px;
+    width: 100px;
+
+    @media (max-width: 768px) {
+      margin: 0 auto;
+    }
+  }
+
+  &__text {
+    min-height: 135px;
+    padding: 15px 0;
+  }
+
+  @media (max-width: 768px) {
+    text-align: center;
+  }
+}

@@ -1,13 +1,19 @@
-.section-slide {
+.section-info {
   &_dark {
     background: $bg_dark;
   }
 
   &__wrapper {
     display: flex;
-    padding-top: 110px;
-    padding-bottom: 160px;
+    padding-top: 57px;
+    padding-bottom: 63px;
     justify-content: space-between;
+
+    &_reverse {
+      flex-direction: row-reverse;
+      padding-top: 110px;
+      padding-bottom: 160px;
+    }
 
     @media (max-width: 768px) {
       flex-direction: column;
@@ -15,10 +21,6 @@
       padding-top: 54px;
       padding-bottom: 47px;
       text-align: center;
-    }
-
-    &_reverse {
-      flex-direction: row-reverse;
     }
   }
 }
@@ -61,7 +63,7 @@
   }
 
   &__text {
-    margin-top: 0;
+    text-align: left;
   }
 }
 
@@ -83,7 +85,15 @@
     font-size: 32px;
   }
 
+  &_s {
+    font-weight: 500;
+    font-size: 28px;
+  }
+}
+
+.text {
   &_accent {
     color: $color_accent;
+    font-weight: 500;
   }
 }
