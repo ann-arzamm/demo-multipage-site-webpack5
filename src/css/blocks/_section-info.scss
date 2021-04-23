@@ -60,10 +60,10 @@
     padding: 24px 0;
     color: $text_grey;
     line-height: 29px;
-  }
 
-  &__text {
-    text-align: left;
+    &_left {
+      text-align: left;
+    }
   }
 }
 
@@ -88,6 +88,10 @@
   &_s {
     font-weight: 500;
     font-size: 28px;
+  }
+
+  &_left {
+    text-align: left;
   }
 }
 

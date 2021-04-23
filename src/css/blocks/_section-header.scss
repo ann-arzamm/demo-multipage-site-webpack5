@@ -1,0 +1,36 @@
+.section-header {
+  min-height: 382px;
+  text-align: center;
+  background-position: center;
+
+  &_wavy {
+    background-image: url("./assets/icons/page-2/bg-1.svg");
+  }
+
+  &__header {
+    display: block;
+    max-width: 545px;
+    margin: 0 auto;
+    padding-top: 74px;
+    font-size: 48px;
+
+    .text_accent {
+      font-weight: 700;
+      font-size: inherit;
+    }
+
+    @media (max-width: 400px) {
+      padding-top: 30px;
+      font-size: 40px;
+    }
+  }
+}
+
+.wave-line {
+  width: 88px;
+  height: 9px;
+
+  &__img {
+    width: 100%;
+  }
+}
