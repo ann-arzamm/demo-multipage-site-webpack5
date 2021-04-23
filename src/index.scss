@@ -25,6 +25,14 @@
   font-size: 18px;
 }
 
+.main {
+  padding-top: 100px;
+
+  @media (max-width: 668px) {
+    padding-top: 72px;
+  }
+}
+
 a:hover {
   color: $color_accent;
 }
