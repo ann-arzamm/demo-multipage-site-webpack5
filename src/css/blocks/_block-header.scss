@@ -1,0 +1,32 @@
+.block-header {
+  margin: 0;
+  line-height: 134%;
+
+  &_l {
+    font-size: 48px;
+    font-weight: 400;
+
+    @media (max-width: 824px) {
+      font-size: 34px;
+    }
+
+    &_b {
+      font-size: 48px;
+      font-weight: 700;
+    }
+  }
+
+  &_m {
+    font-weight: 500;
+    font-size: 32px;
+  }
+
+  &_s {
+    font-weight: 500;
+    font-size: 28px;
+  }
+
+  &_left {
+    text-align: left;
+  }
+}

@@ -88,11 +88,8 @@
   }
 
   &_active {
-    cursor: default;
-
     .list-item__link {
       font-weight: 700;
-      cursor: default;
 
       &:hover {
         color: $text_dark;
