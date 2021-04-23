@@ -7,20 +7,26 @@
     background-image: url("./assets/icons/page-2/bg-1.svg");
   }
 
+  &_linear {
+    background: $color_accent;
+    border-bottom: 36px solid $bg_dark;
+  }
+
   &__header {
     display: block;
-    max-width: 545px;
     margin: 0 auto;
     padding-top: 74px;
+    padding-bottom: 61px;
     font-size: 48px;
+    max-width: 745px;
 
-    .text_accent {
-      font-weight: 700;
-      font-size: inherit;
+    &_light {
+      color: #fff;
     }
 
     @media (max-width: 400px) {
       padding-top: 30px;
+      padding-bottom: 50px;
       font-size: 40px;
     }
   }

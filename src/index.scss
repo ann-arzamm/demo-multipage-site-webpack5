@@ -35,3 +35,13 @@ a:hover {
   position: relative;
   margin: 0 auto;
 }
+
+.text {
+  font-weight: 700;
+  font-size: inherit;
+  color: inherit;
+
+  &_accent {
+    color: $color_accent;
+  }
+}

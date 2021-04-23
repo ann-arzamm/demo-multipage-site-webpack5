@@ -40,6 +40,14 @@
   &__img {
     width: 100%;
   }
+
+  &_padding {
+    padding-top: 80px;
+
+    @media (max-width: 768px) {
+      padding-top: 20px;
+    }
+  }
 }
 
 .content-block {
@@ -92,12 +100,5 @@
 
   &_left {
     text-align: left;
-  }
-}
-
-.text {
-  &_accent {
-    color: $color_accent;
-    font-weight: 500;
   }
 }
