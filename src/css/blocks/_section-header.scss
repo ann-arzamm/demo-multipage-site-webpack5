@@ -1,7 +1,7 @@
 .section-header {
   min-height: 382px;
   text-align: center;
-  background-position: center;
+  position: relative;
 
   &_wavy {
     background-image: url("./assets/icons/page-2/bg-1.svg");
@@ -10,6 +10,17 @@
   &_linear {
     background: $color_accent;
     border-bottom: 36px solid $bg_dark;
+  }
+
+  &_parabola {
+    background: url("./assets/icons/page-4/bg-oval.svg");
+    height: 600px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-position: top;
   }
 
   &__header {

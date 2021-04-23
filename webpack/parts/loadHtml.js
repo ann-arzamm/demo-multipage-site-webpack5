@@ -28,12 +28,12 @@ export default () => ({
       chunks: ['index'],
       filename: 'product.html',
     }),
-    // new HtmlWebpackPlugin({
-    //   template: path.join(process.cwd(), 'src/technology.html'),
-    //   inject: 'body',
-    //   chunks: ['index'],
-    //   filename: 'technology.html',
-    // }),
+    new HtmlWebpackPlugin({
+      template: path.join(process.cwd(), 'src/technology.html'),
+      inject: 'body',
+      chunks: ['index'],
+      filename: 'technology.html',
+    }),
     // new HtmlWebpackPlugin({
     //   template: path.join(process.cwd(), 'src/about.html'),
     //   inject: 'body',

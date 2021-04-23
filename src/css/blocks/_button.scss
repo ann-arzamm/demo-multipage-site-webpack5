@@ -18,6 +18,15 @@
     color: #fff;
   }
 
+  &_white {
+    background: #fff;
+    color: $color_accent;
+  }
+
+  &_center {
+    margin: 0 auto;
+  }
+
   &:hover {
     background: #fff;
     color: $color_accent;
