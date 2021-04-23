@@ -16,19 +16,24 @@
   &_accent {
     background: $color_accent;
     color: #fff;
+
+    &:hover {
+      background: #fff;
+      color: $color_accent;
+    }
   }
 
   &_white {
     background: #fff;
     color: $color_accent;
+
+    &:hover {
+      background: $color_accent;
+      color: #fff;
+    }
   }
 
   &_center {
     margin: 0 auto;
-  }
-
-  &:hover {
-    background: #fff;
-    color: $color_accent;
   }
 }
