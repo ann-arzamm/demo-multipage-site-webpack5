@@ -21,12 +21,20 @@
 
     &_reverse {
       flex-direction: row-reverse;
-      padding-top: 110px;
-      padding-bottom: 160px;
 
       &_s {
+        padding-top: 48px;
+        padding-bottom: 48px;
+      }
+
+      &_m {
         padding-top: 82px;
         padding-bottom: 82px;
+      }
+
+      &_l {
+        padding-top: 110px;
+        padding-bottom: 160px;
       }
     }
 
@@ -107,6 +115,16 @@
     }
   }
 
+  &__circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    width: 70px;
+    height: 70px;
+    background: $color_btn;
+  }
+
   &_padding {
     padding-top: 80px;
 
@@ -123,7 +141,7 @@
 .content-block {
   &_s {
     max-width: 450px;
-    width: 86%;
+    width: 80%;
   }
 
   &_m {
@@ -192,4 +210,9 @@
     margin: auto;
     overflow: auto;
   }
+}
+
+.block-center {
+  margin: 0 auto;
+  text-align: center;
 }
