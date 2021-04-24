@@ -3,11 +3,21 @@
     background: $bg_dark;
   }
 
+  &_accent {
+    background: $color_accent;
+    color: #fff;
+  }
+
   &__wrapper {
     display: flex;
     padding-top: 57px;
     padding-bottom: 63px;
     justify-content: space-between;
+
+    &_s {
+      padding-top: 30px;
+      padding-bottom: 0;
+    }
 
     &_reverse {
       flex-direction: row-reverse;
@@ -41,6 +51,14 @@
 }
 
 .image-block {
+  display: flex;
+  align-items: center;
+
+  &_xs {
+    max-width: 45px;
+    width: 15%;
+  }
+
   &_s {
     max-width: 420px;
     width: 40%;
@@ -83,6 +101,10 @@
 
   &__img {
     width: 100%;
+
+    &_round {
+      border-radius: 2%;
+    }
   }
 
   &_padding {
@@ -95,22 +117,18 @@
 
   &__icon {
     height: 100%;
-
-    &:hover {
-      // TODO resize animation
-    }
   }
 }
 
 .content-block {
+  &_s {
+    max-width: 450px;
+    width: 86%;
+  }
+
   &_m {
     max-width: 520px;
     width: 50%;
-  }
-
-  &_l {
-    max-width: 700px;
-    width: 60%;
   }
 
   @media (max-width: 1024px) {
@@ -123,10 +141,18 @@
   }
 
   &__descr {
-    font-size: 20px;
-    padding: 24px 0;
+    font-size: 18px;
+    padding: 45px 0;
     color: $text_grey;
     line-height: 29px;
+
+    &_white {
+      color: #fff;
+    }
+
+    &_thin {
+      padding: 16px 0 0;
+    }
 
     &_left {
       text-align: left;
@@ -140,5 +166,30 @@
     @media (max-width: 400px) {
       padding-top: 0;
     }
+  }
+}
+
+.video {
+  position: relative;
+  display: block;
+
+  &::after {
+    content: url("./assets/icons/core/play.svg");
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-left: 7px;
+    width: 98px;
+    height: 98px;
+    border-radius: 100%;
+    background: $color_accent;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    overflow: auto;
   }
 }
