@@ -46,17 +46,17 @@ export default () => ({
       chunks: ['index'],
       filename: 'staff.html',
     }),
-    // new HtmlWebpackPlugin({
-    //   template: path.join(process.cwd(), 'src/client.html'),
-    //   inject: 'body',
-    //   chunks: ['index'],
-    //   filename: 'client.html',
-    // }),
-    // new HtmlWebpackPlugin({
-    //   template: path.join(process.cwd(), 'src/partner.html'),
-    //   inject: 'body',
-    //   chunks: ['index'],
-    //   filename: 'partner.html',
-    // }),
+    new HtmlWebpackPlugin({
+      template: path.join(process.cwd(), 'src/client.html'),
+      inject: 'body',
+      chunks: ['index'],
+      filename: 'client.html',
+    }),
+    new HtmlWebpackPlugin({
+      template: path.join(process.cwd(), 'src/partner.html'),
+      inject: 'body',
+      chunks: ['index'],
+      filename: 'partner.html',
+    }),
   ],
 });

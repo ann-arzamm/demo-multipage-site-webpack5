@@ -2,6 +2,11 @@
   margin: 0;
   line-height: 134%;
 
+  &__subheader {
+    padding-top: 24px;
+    font-size: 20px;
+  }
+
   &_white {
     color: #fff;
   }

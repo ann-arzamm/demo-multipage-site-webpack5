@@ -23,6 +23,10 @@
     background-position: top;
   }
 
+  &_partner {
+    background: url("./assets/icons/page-8/bg-4.svg");
+  }
+
   &__header {
     display: block;
     margin: 0 auto;
@@ -30,6 +34,10 @@
     padding-bottom: 61px;
     font-size: 48px;
     max-width: 745px;
+
+    &_wide {
+      max-width: 885px;
+    }
 
     &_light {
       color: #fff;
