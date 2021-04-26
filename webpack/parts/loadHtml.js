@@ -40,6 +40,12 @@ export default () => ({
       chunks: ['index'],
       filename: 'about.html',
     }),
+    new HtmlWebpackPlugin({
+      template: path.join(process.cwd(), 'src/staff.html'),
+      inject: 'body',
+      chunks: ['index'],
+      filename: 'staff.html',
+    }),
     // new HtmlWebpackPlugin({
     //   template: path.join(process.cwd(), 'src/client.html'),
     //   inject: 'body',
