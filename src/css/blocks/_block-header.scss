@@ -17,12 +17,19 @@
     &_b {
       font-size: 48px;
       font-weight: 700;
+      @media (max-width: 824px) {
+        font-size: 34px;
+      }
     }
   }
 
   &_m {
     font-weight: 500;
     font-size: 32px;
+
+    @media (max-width: 400px) {
+      font-size: 24px;
+    }
   }
 
   &_s {
@@ -33,6 +40,9 @@
   &_xs {
     font-weight: 500;
     font-size: 24px;
+    @media (max-width: 400px) {
+      font-size: 20px;
+    }
   }
 
   &_left {

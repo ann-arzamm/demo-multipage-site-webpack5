@@ -13,10 +13,24 @@
     padding-top: 57px;
     padding-bottom: 63px;
     justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+      padding-top: 54px;
+      padding-bottom: 47px;
+      text-align: center;
+    }
 
     &_s {
       padding-top: 30px;
       padding-bottom: 0;
+
+      @media (max-width: 768px) {
+        width: 100%;
+        flex-direction: row;
+      }
     }
 
     &_reverse {
@@ -36,6 +50,14 @@
         padding-top: 110px;
         padding-bottom: 160px;
       }
+
+      @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 54px;
+        padding-bottom: 47px;
+        text-align: center;
+      }
     }
 
     &_column {
@@ -46,14 +68,6 @@
       @media (max-width: 1024px) {
         padding-top: 45px;
       }
-    }
-
-    @media (max-width: 768px) {
-      flex-direction: column;
-      align-items: center;
-      padding-top: 54px;
-      padding-bottom: 47px;
-      text-align: center;
     }
   }
 }
@@ -123,6 +137,11 @@
     width: 70px;
     height: 70px;
     background: $color_btn;
+
+    @media (max-width: 400px) {
+      width: 50px;
+      height: 50px;
+    }
   }
 
   &_padding {
@@ -142,20 +161,22 @@
   &_s {
     max-width: 450px;
     width: 80%;
+
+    @media (max-width: 824px) {
+      width: 75%;
+    }
   }
 
   &_m {
     max-width: 520px;
     width: 50%;
-  }
-
-  @media (max-width: 1024px) {
-    width: 54%;
-  }
-
-  @media (max-width: 768px) {
-    width: 100%;
-    padding-top: 32px;
+    @media (max-width: 824px) {
+      width: 55%;
+    }
+    @media (max-width: 768px) {
+      width: 100%;
+      padding-top: 32px;
+    }
   }
 
   &__descr {
@@ -164,12 +185,20 @@
     color: $text_grey;
     line-height: 29px;
 
+    @media (max-width: 400px) {
+      font-size: 16px;
+    }
+
     &_white {
       color: #fff;
     }
 
     &_thin {
       padding: 16px 0 0;
+
+      @media (max-width: 400px) {
+        padding: 10px 0 0;
+      }
     }
 
     &_left {
@@ -184,6 +213,15 @@
     @media (max-width: 400px) {
       padding-top: 0;
     }
+  }
+
+  @media (max-width: 1024px) {
+    width: 54%;
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    padding-top: 32px;
   }
 }
 
@@ -209,6 +247,11 @@
     left: 0;
     margin: auto;
     overflow: auto;
+
+    @media (max-width: 400px) {
+      width: 75px;
+      height: 75px;
+    }
   }
 }
 
