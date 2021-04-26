@@ -1,0 +1,40 @@
+.section-cards {
+  &__header {
+    min-height: 405px;
+    border-bottom: 17px solid $color_accent;
+    padding: 100px 0;
+
+    &_right {
+      background: url("./assets/icons/page-7/bg-3.svg") 50% / cover no-repeat;
+    }
+
+    &__text {
+      max-width: 700px;
+    }
+  }
+}
+
+.block-lines {
+  padding: 30px 0;
+
+  &_dark {
+    background: $bg_dark;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__descr {
+    width: 52%;
+  }
+
+  &__subheader {
+    font-weight: 500;
+    color: $color_accent;
+    font-size: 20px;
+  }
+}
