@@ -8,6 +8,15 @@
       min-height: 500px;
     }
 
+    &_center {
+      padding-top: 62px;
+      text-align: center;
+      background-image: url("./assets/icons/page-6/bg-2.svg");
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      background-color: #f6f6f6;
+    }
+
     &_right {
       background-image: url("./assets/icons/page-7/bg-3.svg");
       background-position: right bottom;
