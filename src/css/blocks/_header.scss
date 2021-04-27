@@ -8,7 +8,6 @@
 
 .nav {
   padding: 0;
-  // TODO media for font-size
   height: 100px;
   display: grid;
   grid-template-areas: "a b c";
@@ -31,7 +30,6 @@
     .shortcuts {
       display: none;
     }
-    // TODO sandwich menu dropdown list
     .sandwich {
       display: flex;
     }
@@ -155,11 +153,16 @@
 
   &__dropdown {
     position: absolute;
-    top: 72px;
+    z-index: 9;
+    top: -100%;
     left: 0;
     background-color: #fff;
     box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
     width: 100%;
+
+    &_active {
+      top: 72px;
+    }
   }
 
   &__wrapper {
@@ -167,6 +170,7 @@
     flex-direction: column;
     align-items: center;
     margin: 0;
+    padding: 0;
   }
 
   &__item {
