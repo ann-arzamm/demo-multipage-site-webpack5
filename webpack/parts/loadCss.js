@@ -58,13 +58,14 @@ export const loadProdCss = () => ({
   module: {
     rules: [
       {
-        test: /\.scss$/i,
+        test: /\.(scss|css)$/i,
         use: [
           MiniCssExtractPlugin.loader,
           loadCss(),
           loadPostCss('prod'),
         ],
       },
+
     ],
   },
 
@@ -79,7 +80,7 @@ export const loadDevCss = () => ({
   module: {
     rules: [
       {
-        test: /\.scss$/i,
+        test: /\.(scss|css)$/i,
         use: [
           'style-loader',
           loadCss(),

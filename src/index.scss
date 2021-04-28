@@ -22,13 +22,13 @@
 
 // General styles
 * {
+  transition: 2s all;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: $text_dark;
   font-size: 18px;
   text-decoration: none;
-  // animation-duration: 1s;
-  transition-duration: 1s;
+  scroll-behavior: smooth;
 }
 
 .hide {
