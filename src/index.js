@@ -1,24 +1,17 @@
 import 'animate.css';
 import './index.scss';
 
-// sandwich menu
-const menu = document.querySelector('.sandwich');
-const dropdown = document.querySelector('.sandwich__dropdown');
+import sandwich from './js/sandwich.js';
+import pageup from './js/pageup.js';
+import slider from './js/slider.js';
 
-menu.addEventListener('click', (e) => {
-  e.preventDefault();
-  dropdown.classList.toggle('sandwich__dropdown_active');
-});
+window.addEventListener('DOMContentLoaded', () => {
+  // sandwich menu
+  sandwich('.sandwich', '.sandwich__dropdown', 'sandwich__dropdown_active');
 
-// page up button
-const upElem = document.querySelector('.pageup');
+  // page up button
+  pageup('.pageup', 500);
 
-window.addEventListener('scroll', () => {
-  if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
-    upElem.classList.add('animate__fadeInUp');
-    upElem.classList.remove('animate__fadeOutDown');
-  } else {
-    upElem.classList.add('animate__fadeOutDown');
-    upElem.classList.remove('animate__fadeInUp');
-  }
+  // carousel activation
+  slider('carousel', '.slide', '.carousel__btn_left', '.carousel__btn_right');
 });

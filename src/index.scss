@@ -36,6 +36,11 @@
   display: none;
 }
 
+iframe {
+  object-fit: cover;
+  width: 100%;
+}
+
 .main {
   padding-top: 100px;
 

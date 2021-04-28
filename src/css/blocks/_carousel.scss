@@ -32,6 +32,10 @@
   }
 
   &__content {
+    overflow: hidden;
+  }
+
+  &__slide {
     display: flex;
     justify-content: space-between;
     align-items: center;
