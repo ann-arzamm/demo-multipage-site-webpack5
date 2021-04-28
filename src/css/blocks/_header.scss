@@ -63,7 +63,7 @@
 }
 
 .list-item {
-  &_active .list-item__link {
+  &_active {
     font-weight: 700;
 
     &:hover {
@@ -83,6 +83,7 @@
   }
 
   &__content {
+    display: none;
     position: absolute;
     z-index: 1;
     min-width: 150px;
@@ -117,7 +118,7 @@
   &__wrapper {
     margin: 0;
     height: 100%;
-    max-width: 105px;
+    max-width: 70px;
     display: flex;
     justify-content: space-between;
     align-items: center;
