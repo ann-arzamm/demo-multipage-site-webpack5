@@ -19,10 +19,11 @@
 @import "css/blocks/section-cards";
 @import "css/blocks/carousel";
 @import "css/blocks/pageup";
+@import "css/blocks/sandwich";
 
 // General styles
 * {
-  transition: 2s all;
+  transition: 1s all;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: $text_dark;

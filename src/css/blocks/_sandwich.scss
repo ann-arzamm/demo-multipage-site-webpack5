@@ -1,0 +1,63 @@
+.sandwich {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 32px;
+
+  &__img {
+    fill: $text_dark;
+
+    &:hover {
+      fill: $color_accent;
+    }
+  }
+
+  &__dropdown {
+    position: absolute;
+    z-index: 9;
+    top: -100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+    width: 100%;
+
+    &_active {
+      top: 72px;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__item {
+    border-bottom: 1px solid rgb(226, 224, 224);
+    display: block;
+    width: 100%;
+    text-align: center;
+
+    &:hover {
+      background-color: $bg_dark;
+    }
+  }
+
+  &__link {
+    display: block;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__shortcuts {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    width: 200px;
+  }
+}
