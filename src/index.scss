@@ -3,6 +3,7 @@
 // Core modules
 @import "css/core/fonts";
 @import "css/core/variables";
+@import "css/core/animation";
 
 // Content blocks | BEM
 @import "css/blocks/header";
@@ -21,6 +22,8 @@
 // General styles
 * {
   transition: 1s all;
+  animation-fill-mode: both;
+  animation-duration: 1s;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   color: $text_dark;

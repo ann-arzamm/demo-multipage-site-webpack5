@@ -1,4 +1,3 @@
-import 'animate.css';
 import './index.scss';
 
 import sandwich from './js/sandwich.js';

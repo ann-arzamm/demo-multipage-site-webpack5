@@ -17,7 +17,7 @@ export default (carouselSelector, slides, prev, next) => {
 
     // hide all slides
     items.forEach((item) => {
-      item.classList.add('animate__animated');
+      // item.classList.add('animate__animated');
       item.style.display = 'none';
     });
 
