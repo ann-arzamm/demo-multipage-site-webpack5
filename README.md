@@ -1,11 +1,12 @@
-# Portfolio project
+## BEM methodology implementation project
 
-What is it: BEM methodology implementation project
-    
+Multi page site 
 
-## Technology used:
-- 
-- 
+### Technology used:
+- webpack 5
+- Scss / CSS3
+- HTML5
+- JavaScript
 
 
-[Preview the final build here](...)
+[See on hosting](https://pp-dsi-company-website.vercel.app/)
