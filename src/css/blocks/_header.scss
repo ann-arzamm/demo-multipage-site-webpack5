@@ -8,7 +8,7 @@
 
 .nav {
   padding: 0;
-  height: 100px;
+  min-height: 100px;
   display: grid;
   grid-template-areas: "a b c";
   grid-template-columns: 119px 75% 10%;
