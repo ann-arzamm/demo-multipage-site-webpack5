@@ -1,9 +1,9 @@
 export default (carouselSelector, slides, prev, next) => {
   let slideIndex = 1;
   const items = document.querySelectorAll(slides);
-  const carousel = document.querySelector(carouselSelector);
+  // const carousel = document.querySelector(carouselSelector);
   // carousel state
-  const paused = false;
+  // const paused = false;
 
   // show current slide
   function showSlides(n) {

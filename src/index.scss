@@ -3,9 +3,6 @@
 // Core modules
 @import "css/core/fonts";
 @import "css/core/variables";
-@import "css/core/mixins";
-@import "css/core/animation";
-@import "css/core/media";
 
 // Content blocks | BEM
 @import "css/blocks/header";
@@ -29,6 +26,7 @@
   color: $text_dark;
   font-size: 18px;
   text-decoration: none;
+  // not working on Safari
   scroll-behavior: smooth;
 }
 
