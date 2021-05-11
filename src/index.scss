@@ -6,6 +6,7 @@
 @import "css/core/animation";
 
 // Content blocks | BEM
+@import "css/blocks/cookie";
 @import "css/blocks/header";
 @import "css/blocks/footer";
 @import "css/blocks/section-info";
@@ -16,8 +17,8 @@
 @import "css/blocks/section-block";
 @import "css/blocks/section-cards";
 @import "css/blocks/carousel";
-@import "css/blocks/pageup";
 @import "css/blocks/sandwich";
+@import "css/blocks/pageup";
 
 // General styles
 * {

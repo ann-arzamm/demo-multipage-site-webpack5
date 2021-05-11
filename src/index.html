@@ -30,6 +30,13 @@
     />
     <link rel="shortcut icon" href="./assets/icons/favicon.ico" />
 
+    <!-- Cookies styles -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css"
+    />
+
     <title>DCI home page</title>
   </head>
   <body>
@@ -419,7 +426,6 @@
     </footer>
 
     <!-- PageUp button  -->
-    <!-- PageUp button  -->
     <a href="#" class="pageup animate__animated">
       <svg
         aria-hidden="true"
@@ -434,5 +440,11 @@
         ></path>
       </svg>
     </a>
+
+    <div class="popup">
+      <div class="popup__content">We use cookies!</div>
+      <a class="button button_accent popup__button" data-cancel>Cancel</a>
+      <a class="button button_accent popup__button" data-confirm>Accept</a>
+    </div>
   </body>
 </html>
